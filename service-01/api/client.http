@@ -1,0 +1,28 @@
+
+POST http://localhost:8080/clients HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Joanna Doe",
+    "email": "joanna@j.com"
+}
+
+###
+
+POST http://localhost:8080/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "client_id": "15b6eee5-4140-4755-9578-9e53a9c10fca"
+}
+
+###
+
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "9227d290-78be-4d83-b4a4-5b29958583a4",
+    "account_id_to": "f4e45e72-6558-417b-bb8f-830a9feedf33",
+    "amount": 2
+}
